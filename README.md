@@ -1,7 +1,7 @@
 # F-Tester&reg; Open Data 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
-This repository contains two freely usable datasets of transmission data acquired in the mobile network of three operators in the Czech Republic. The measurements were obtained in a car while driving in the city and the countryside. The data structure is described in the following chapter. The data is licensed under the CC BY-NC-SA 4.0 licence.
+This repository contains two anonymized, freely usable datasets of transmission data acquired in the mobile network of three operators in the Czech Republic. The measurements were obtained in a car while driving in the city and the countryside. The data structure is described in the following chapter. The data is licensed under the CC BY-NC-SA 4.0 licence.
 
 
 ## Basic characteristics of the data set
@@ -35,7 +35,7 @@ Measurement device: F-Tester&reg; 4drive-box v2 (https://f-tester.fel.cvut.cz)
         └── Operator3_Czechia_Prague.json
 ```
 
-### md5sum
+#### md5sum
 ```TXT
 a156a15a626cc0441d87be8ebe76c9c6  mobile_measurement-data_Jeseniky.zip
 c1b3753bbe205dbeabcd278fe41ccd75  mobile_measurement-data_Prague.zip
@@ -46,6 +46,24 @@ b19f243bd3e71670ba83327855437ff1  01_Prague/Operator2_Czechia_Prague.json
 dc1824d3469668918b191f89bf8ae93d  02_Jeseniky/Operator2_Czechia_Jeseniky.json
 8dbad2b86d7ac722c37392e272b9208b  02_Jeseniky/Operator3_Czechia_Jeseniky.json
 ```
+
+## Description of anonymization
+
+All variables that could identify a real mobile operator are anonymized in the data file. The names of the operators are selected: Operator1, Operator2, and Operator3.
+
+List of anonymized items:
+- mnc
+- cell_id
+- ltrac
+- tac
+- channel
+- earfcn
+- rx_channel
+- netname
+- imsi
+- nr_channel
+- nr_ul_channel
+- ipv4-address
 
 ## Description of JSON export file
 
