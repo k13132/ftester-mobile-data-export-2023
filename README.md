@@ -80,21 +80,21 @@ List of anonymized items:
         - telemetry timestamps (lower sample rate)
 
 ### General structure
-<code-block lang="json" collapsible="true" default-state="expanded" collapsed-title="General structure">
+``` JSON
 {
     "info": {},                                     Info section
     "data": {}                                      Data section
 }
-</code-block>
+   ```
 
 #### Info section (Detail)
-<code-block lang="json" collapsible="true" default-state="expanded" collapsed-title="Info section">
+``` JSON
 {
 "info": {
     "version": "1.0.0"                              JSON version specification
     "layer": 4                                      RM ISO/OSI Layer specification
 },
-</code-block>
+   ```
 
 
 #### Data section (Detail)
