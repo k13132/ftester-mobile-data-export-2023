@@ -1,7 +1,7 @@
 # F-Tester&reg; Open Data 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
-This repository contains two anonymized, freely usable datasets of transmission data acquired in the mobile network of three operators in the Czech Republic. The measurements were obtained in a car while driving in the city and the countryside. The data structure is described in the following chapter. The data is licensed under the CC BY-NC-SA 4.0 licence.
+This repository contains two anonymized, freely usable datasets of transmission data acquired in the mobile network of three operators in the Czech Republic. The measurements were obtained in a car while driving in the city and the countryside. The data structure is described in the following chapter. The data is licensed under the CC BY-NC-SA 4.0 license.
 
 
 ## Basic characteristics of the data set
@@ -69,14 +69,14 @@ List of anonymized items:
 
     version 1.0.1 (this document)
 
-    NOTEs:
+    Notes:
     - Duplicity in Mobile network info is by design. Statistics are collected via several methods (AT commands, QMI infrastructure).
     - Not all data structures are presents
         - depend on available statistics 
         - depend on available network mode/types
-    - Multiple timestamp source / formats available
-        - human readable
-        - unix timestamp
+    - Multiple timestamp source/formats available
+        - human-readable
+        - Unix timestamp
         - telemetry timestamps (lower sample rate)
 
 ### General structure
@@ -106,7 +106,7 @@ List of anonymized items:
         "1_U_1": {                                      data record key - TestID_Direction_TimeStamp
             "key": "1_U_1"                              data record key - TestID_Direction_TimeStamp
             "timestamp": 2,                             relative time stamp
-            "unix_timestamp": 1676358085,               unix time stamp
+            "unix_timestamp": 1676358085,               Unix timestamp
             "direction": "upstream",                    traffic flow direction
             "test_id": 3,                               test id
             "ts": 1676358083,                           telemetry timestamp (if telemetry [mobile, system, gps] present)
@@ -120,7 +120,7 @@ List of anonymized items:
         "gps_HDOP": 0.7,                               horizontal accuracy
         "gps_VDOP": 1.2,                               vertical accuracy
         "gps_PDOP": 1.4,                               3D accuracy
-        "gps_satellites": 9,                           number of satelites
+        "gps_satellites": 9,                           number of satellites
         "gps_course": 121.9,                           course [deg]   
         "gps_elevation": 263.2,                        elevation
         "gps_latitude": 50.015739,                     latitude
@@ -410,9 +410,9 @@ The number of items depends on a number of activated LTE carriers.
       "tcp_1_TP": 48062326,                             TCP_TestID/(FlowID)     TP - Throughput
       "tcp_1_RTT": 65.25433333333334,                                           RTT - TCP Round Trip Time
       "tcp_1_err_TP": false,                                                    NGA params related evaluation
-      "tcp_1_ema_TP": 48062326,                                                 TP - Exponentialy weighted Moving Average
+      "tcp_1_ema_TP": 48062326,                                                 TP - Exponentially Weighted Moving Average
       "tcp_1_err_RTT": false,                                                   NGA params related evaluation
-      "tcp_1_ema_RTT": 65.25433333333334,                                       RTT - Exponentialy weighted Moving Average
+      "tcp_1_ema_RTT": 65.25433333333334,                                       RTT - Exponentially Weighted Moving Average
       "tcp_1/0_err_TP": false,                           subflow 0
       "tcp_1/0_ema_TP": 16242009.136867017,              subflow 0
       "tcp_1/0_err_RTT": false,                          subflow 0
@@ -447,23 +447,23 @@ The number of items depends on a number of activated LTE carriers.
 ``` JSON
       "udp_1_TP": 6048066,                              UDP_TestID/(FlowID)     TP - Throughput
       "udp_1_err_TP": false,                                                    NGA params related evaluation
-      "udp_1_ema_TP": 6048066,                                                  TP - Exponentialy weighted Moving Average
+      "udp_1_ema_TP": 6048066,                                                  TP - Exponentially Weighted Moving Average
       "udp_1/0_err_TP": false,                                                  NGA params related evaluation
-      "udp_1/0_ema_TP": 2016022.2303934467,             subflow 0               TP - Exponentialy weighted Moving Average
+      "udp_1/0_ema_TP": 2016022.2303934467,             subflow 0               TP - Exponentially Weighted Moving Average
       "udp_1/0_TP": 2016022.2303934467,                 subflow 0               TP - Throughput
       "udp_1/0_PLR": 0,                                 subflow 0               Packet Loss Rate
       "udp_1/0_JITTER": 1.3664489436034783,             subflow 0               Jitter
       "udp_1/0_err_PLR": false,                         subflow 0               NGA params related evaluation
       "udp_1/0_err_JITTER": false,                      subflow 0               NGA params related evaluation
       "udp_1/1_err_TP": false,                          subflow 1               NGA params related evaluation
-      "udp_1/1_ema_TP": 2016022.2303934467,             subflow 1               TP - Exponentialy weighted Moving Average
+      "udp_1/1_ema_TP": 2016022.2303934467,             subflow 1               TP - Exponentially Weighted Moving Average
       "udp_1/1_TP": 2016022.2303934467,                 subflow 1               TP - Throughput
       "udp_1/1_PLR": 0,                                 subflow 1               Packet Loss Rate
       "udp_1/1_JITTER": 1.445338891564827,              subflow 1               Jitter
       "udp_1/1_err_PLR": false,                         subflow 1               NGA params related evaluation
       "udp_1/1_err_JITTER": false,                      subflow 1               NGA params related evaluation
       "udp_1/2_err_TP": false,                          subflow 2               NGA params related evaluation
-      "udp_1/2_ema_TP": 2016022.2303934467,             subflow 2               TP - Exponentialy weighted Moving Average
+      "udp_1/2_ema_TP": 2016022.2303934467,             subflow 2               TP - Exponentially weighted Moving Average
       "udp_1/2_TP": 2016022.2303934467,                 subflow 2               TP - Throughput
       "udp_1/2_PLR": 0,                                 subflow 2               Packet Loss Rate
       "udp_1/2_JITTER": 1.479250661466545,              subflow 2               Jitter
@@ -479,9 +479,9 @@ The number of items depends on a number of activated LTE carriers.
       "icmp_1_RTT": 14.280000000000001,                                       RTT - Round Trip Time
       "icmp_1_PLR": 0,                                                        Packet Loss Rate
       "icmp_1_JITTER": 0.8829985835093795,                                    Jitter
-      "icmp_1_ema_TP": 96000,                                                 TP - Exponentialy weighted Moving Average
-      "icmp_1_ema_RTT": 14.280000000000001,                                   RTT - Exponentialy weighted Moving Average
-      "icmp_1_ema_JITTER": 0.8829985835093795,                                JITTER - Exponentialy weighted Moving Average
+      "icmp_1_ema_TP": 96000,                                                 TP - Exponentially Weighted Moving Average
+      "icmp_1_ema_RTT": 14.280000000000001,                                   RTT - Exponentially Weighted Moving Average
+      "icmp_1_ema_JITTER": 0.8829985835093795,                                JITTER - Exponentially Weighted Moving Average
       "icmp_1_err_TP": false,                                                 NGA params related evaluation
       "icmp_1_err_RTT": false,                                                NGA params related evaluation
       "icmp_1_err_PLR": false,                                                NGA params related evaluation
@@ -489,18 +489,18 @@ The number of items depends on a number of activated LTE carriers.
 ```
 </details>
 
-<details><summary>Measurement data flows details (UDP - Flowping - Interval mode)</summary>
+<details><summary>Measurement data flow details (UDP - Flowping - Interval mode)</summary>
 
 ``` JSON
       "udp_2_TP": 2560000,                                UDP_TestID        TP -Throughput
       "udp_2_RTT": 235.81362243749996,                                      RTT - Round Trip Time
-      "udp_2_Delay": 162.93965280056,                                       One Way Delay (under developement)
+      "udp_2_Delay": 162.93965280056,                                       One Way Delay (under development)
       "udp_2_PLR": 0,                                                       Packet Loss Rate (+ Out Of Order)
       "udp_2_PLR_OOO": 0,                                                   Out Of Order packets
       "udp_2_JITTER": 2.466879,                                             RTT Jitter
-      "udp_2_ema_TP": 2560000,                                              TP - Exponentialy weighted Moving Average
-      "udp_2_ema_RTT": 235.81362243749996,                                  RTT - Exponentialy weighted Moving Average
-      "udp_2_ema_JITTER": 2.466879,                                         JITTER - Exponentialy weighted Moving Average
+      "udp_2_ema_TP": 2560000,                                              TP - Exponentially Weighted Moving Average
+      "udp_2_ema_RTT": 235.81362243749996,                                  RTT - Exponentially Weighted Moving Average
+      "udp_2_ema_JITTER": 2.466879,                                         JITTER - Exponentially Weighted Moving Average
       "udp_2_err_TP": false,                                                NGA params related evaluation
       "udp_2_err_RTT": false,                                               NGA params related evaluation
       "udp_2_err_PLR": false,                                               NGA params related evaluation
